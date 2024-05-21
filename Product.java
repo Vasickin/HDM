@@ -1,27 +1,33 @@
 
 public class Product {
 
+    // Поля стоимости и названия продукта
     private int cost;
     private String name;
 
+    // Конструктор класса Product
     public Product(int cost, String name) {
         this.cost = cost;
         this.name = name;
     }
 
-    public int GetCost() {
+    // Геттер для стоимости
+    public int getCost() {
         return cost;
     }
 
-    public String GetName(){
+    // Геттер для названия
+    public String getName() {
         return name;
     }
 
-    public void SetCost(int cost){
+    // Сеттер для стоимости
+    public void setCost(int cost) {
         this.cost = cost;
     }
 
-    public void SetName(String name) {
+    // Сеттер для названия
+    public void setName(String name) {
         this.name = name;
     }
 }
