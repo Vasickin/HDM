@@ -1,22 +1,10 @@
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class VendingMachine {
+// Интерфейс для торгового автомата
+public interface VendingMachine {
 
-    private List<Product> listProduct = new ArrayList<>();
+    void initProducts(List<Product> products);
 
-    public void initProducts(List<Product> listProducts) {
-        listProduct = listProducts;
-    }
-
-    public Product getProduct(String name) {
-        for (Product product : listProduct) {
-            if (product.GetName().equals(name)) {
-                return product;
-            }
-        }
-
-        return null;
-    }
+    Product getProduct(String name);
 }
