@@ -28,7 +28,14 @@ public class HotDrinksMachine implements VendingMachine {
         return null;
     }
 
-    // Перегруженный метод для получения продукта по имени, объему и температуре
+    /**
+     * Перегруженный метод для получения продукта по имени, объему и температуре
+     *
+     * @param name
+     * @param volume
+     * @param temperature
+     * @return
+     */
     public HotDrink getProduct(String name, int volume, int temperature) {
         for (HotDrink hotDrink : hotDrinks) {
             if (hotDrink.getName().equals(name) && hotDrink.getCost() == volume && hotDrink.getTemperature() == temperature) {
