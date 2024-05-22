@@ -1,7 +1,11 @@
 
 import java.util.List;
 
-// Интерфейс для торгового автомата
+/**
+ * Интерфейс для торгового автомата
+ *
+ * @author lex
+ */
 public interface VendingMachine {
 
     void initProducts(List<Product> products);
